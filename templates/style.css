@@ -1,0 +1,161 @@
+/* ##########################################
+File Name: style.css
+Company: House of Glamour
+Created by: Einstein Bulinda
+
+
+[Table of Contents]
+
+1. Common
+2. Layout
+*/
+
+/* Common */
+html {
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem*/
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header a {
+  text-decoration: none;
+  transition: 0.5s all ease;
+}
+a:hover {
+  color: #f80f07 !important;
+  box-shadow: 0 4px 2px -2px #f11809;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem 1fr 5rem;
+  height: 100%;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Main Logo */
+.navbar-brand img {
+  height: 6rem;
+  max-height: 100%;
+}
+a.navbar-brand:hover {
+  box-shadow: none;
+}
+
+/* Footer */
+p {
+  color: #999;
+  line-height: 2.5rem;
+}
+h2 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.footer-top {
+  background: #111;
+  padding: 3rem 0;
+}
+.segment-one h3 {
+  font-family: Courgette;
+  color: #e22626;
+  letter-spacing: 0.3rem;
+  margin: 1rem 0;
+}
+.segment-one a {
+  color: #999;
+  font-weight: normal;
+}
+.segment-two h2,
+.segment-three h2,
+.segment-four h2 {
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+.segment-two h2:before,
+.segment-three h2:before,
+.segment-four h2:before {
+  content: "|";
+  color: #e22626;
+  padding-right: 1rem;
+}
+.segment-two ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.segment-two ul li {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  line-height: 4rem;
+}
+.segment-two ul li a {
+  color: #999;
+  text-decoration: none;
+}
+.segment-three a {
+  background: #494848;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: none;
+}
+.segment-three a i {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 1.2rem;
+}
+
+.segment-four form {
+  box-sizing: border-box;
+  display: flex;
+}
+.segment-four form input[type="submit"] {
+  background: #e22626;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  margin-left: -0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-bottom-text {
+  text-align: center;
+  background: #000;
+  line-height: 5rem;
+}
+/* Responsive css */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .md-mb-30 {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sm-mb-30 {
+    margin-bottom: 3rem;
+  }
+  .footer-top {
+    padding: 5rem;
+  }
+}
