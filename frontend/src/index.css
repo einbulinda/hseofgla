@@ -8,9 +8,17 @@ Created by: Einstein Bulinda
 
 1. Common
 2. Layout
+3. Main logo
+4. Footer
+5. Responsive css
+6. Product Images
+7. Card
+8. Rating 
 */
 
-/* Common */
+/*#############################
+1. Common 
+###############################*/
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem*/
   box-sizing: border-box;
@@ -20,6 +28,11 @@ body {
   height: 100vh;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  height: 100%;
 }
 h1 {
   font-size: 1.8rem;
@@ -41,7 +54,9 @@ a:hover {
   text-align: center;
 }
 
-/* Layout */
+/*################################
+2. Layout 
+#################################*/
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -71,7 +86,9 @@ footer {
   justify-content: center;
 }
 
-/* Main Logo */
+/*###############################
+3. Main Logo 
+#################################*/
 .navbar-brand img {
   height: 6rem;
   max-height: 100%;
@@ -80,7 +97,9 @@ a.navbar-brand:hover {
   box-shadow: none;
 }
 
-/* Footer */
+/*#############################
+4. Footer 
+###############################*/
 p {
   color: #999;
   line-height: 2.5rem;
@@ -137,13 +156,13 @@ footer h2 {
   display: inline-block;
   border-radius: 50%;
   box-shadow: none;
+  margin: 0.5rem;
 }
 .segment-three a i {
   font-size: 2rem;
   color: #fff;
   padding: 1rem 1.2rem;
 }
-
 .segment-four form {
   box-sizing: border-box;
   display: flex;
@@ -161,7 +180,9 @@ footer h2 {
   background: #000;
   line-height: 5rem;
 }
-/* Responsive css */
+/*################################
+5. Responsive css 
+##################################*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .md-mb-30 {
     margin-bottom: 3rem;
@@ -176,7 +197,9 @@ footer h2 {
   }
 }
 
-/* Product Images */
+/*##################################
+6. Product Images 
+####################################*/
 img {
   border-radius: 0.5rem;
 }
@@ -187,7 +210,9 @@ img.medium {
   width: 100%;
 }
 
-/* Card */
+/*####################################
+7. Card 
+######################################*/
 .card {
   border: 0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
@@ -206,7 +231,9 @@ img.medium {
 .price {
   font-size: 2rem;
 }
-/* Rating */
+/*##################################
+8. Rating 
+###################################*/
 .rating span {
   color: #f0c040;
   margin: 0.1rem;

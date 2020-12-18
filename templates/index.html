@@ -28,60 +28,127 @@
     />
     <title>House of Glamour</title>
   </head>
+
   <body>
     <div class="grid-container">
       <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./logos/400dpiLogo.jpg" alt="House of Glamour" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Offers!</a
-                >
-              </li>
-            </ul>
-            </form>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="cart.html" class="nav-link">Cart</a>
-              </li>
-              <li class="nav-item">
-                <a href="signin.html" class="nav-link">Sign In</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./logos/400dpiLogo.jpg" alt="House of Glamour" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    href="#"
+                    tabindex="-1"
+                    aria-disabled="true"
+                    >Offers!</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a href="signin.html" class="nav-link">Sign In</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
       </header>
       <main>
-        <p>Some text here</p>
-        <p>Another text here</p>
-        <p>Different text here</p>
+        <div class="product-row center">
+          <div class="card">
+            <a href="product.html">
+              <img
+                class="medium"
+                src="./images/products/greyFlowery.jpg"
+                alt="Product"
+              />
+            </a>
+            <div class="card-body">
+              <a href="product.html">
+                <h2>Grey Flowered</h2>
+              </a>
+              <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </div>
+              <div class="price">Ksh. 10,000</div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="product.html">
+              <img
+                class="medium"
+                src="./images/products/knives.jpg"
+                alt="Product"
+              />
+            </a>
+            <div class="card-body">
+              <a href="product.html">
+                <h2>Knife Set</h2>
+              </a>
+              <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star-half-alt"></i></span>
+              </div>
+              <div class="price">Ksh. 7,000</div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="product.html">
+              <img
+                class="medium"
+                src="./images/products/utensil_set.jpg"
+                alt="Product"
+              />
+            </a>
+            <div class="card-body">
+              <a href="product.html">
+                <h2>Utensil Set</h2>
+              </a>
+              <div class="rating">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+              </div>
+              <div class="price">Ksh. 5,000</div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>
         <div class="footer-top">
@@ -107,11 +174,10 @@
               >
                 <h2>Useful Links</h2>
                 <ul>
-                  <li><a href="#">Event</a></li>
-                  <li><a href="#">Hosting</a></li>
+                  <li><a href="#">Delivery Services</a></li>
                   <li><a href="#">Career</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Discounts</a></li>
+                  <li><a href="#">Offers</a></li>
                 </ul>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
