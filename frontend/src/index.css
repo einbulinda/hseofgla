@@ -205,7 +205,7 @@ img {
 }
 img.medium {
   max-width: 29rem;
-  max-height: 30rem;
+  max-height: 29rem;
   height: 100%;
   width: 100%;
 }
@@ -237,4 +237,7 @@ img.medium {
 .rating span {
   color: #f0c040;
   margin: 0.1rem;
+}
+.rating span:last-child {
+  color: #404040;
 }

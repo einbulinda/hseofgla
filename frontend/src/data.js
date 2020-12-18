@@ -43,7 +43,7 @@ const data = {
       image: "./images/products/vaccum.jpg",
       brand: "Arshia",
       price: 18000,
-      rating: 5.0,
+      rating: 4.5,
       numReviews: 16,
       countInStock: 8,
       description: "Arshia vaccum cleaner.",

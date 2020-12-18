@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./components/Product";
 import data from "./data";
 
 function App() {
@@ -67,43 +68,7 @@ function App() {
         <div>
           <div className="product-row center">
             {data.products.map((product) => (
-              <div key={product._id} className="card">
-                <a href={`/product/${product._id}`}>
-                  <img
-                    className="medium"
-                    src={product.image}
-                    alt={product.name}
-                  />
-                </a>
-                <div className="card-body">
-                  <a href={`/product/${product._id}`}>
-                    <h2>{product.name}</h2>
-                  </a>
-                  <div className="rating">
-                    <span>
-                      <i className="fas fa-star"></i>
-                    </span>
-                    <span>
-                      <i className="fas fa-star"></i>
-                    </span>
-                    <span>
-                      <i className="fas fa-star"></i>
-                    </span>
-                    <span>
-                      <i className="fas fa-star"></i>
-                    </span>
-                    <span>
-                      <i className="far fa-star"></i>
-                    </span>
-                  </div>
-                  <div className="price">
-                    Ksh.{" "}
-                    {product.price
-                      .toString()
-                      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
-                  </div>
-                </div>
-              </div>
+              <Product key={product._id} product={product}></Product>
             ))}
           </div>
         </div>
