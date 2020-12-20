@@ -53,7 +53,42 @@ a:hover {
 .text-center {
   text-align: center;
 }
+.text-justify {
+  text-align: justify;
+  padding: 0.5rem 5rem;
+}
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: 0.5s all ease-in;
+}
+button:hover {
+  border: 0.1rem #404040 solid;
+  color: #f8f8f8;
+}
+button.primary {
+  background-color: #f11809;
+}
+button.block {
+  width: 100%;
+}
 /*################################
 2. Layout 
 #################################*/
@@ -85,7 +120,15 @@ footer {
 .product-row.center {
   justify-content: center;
 }
-
+.product-row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
 /*###############################
 3. Main Logo 
 #################################*/
@@ -209,6 +252,9 @@ img.medium {
   height: 100%;
   width: 100%;
 }
+img.large {
+  width: 100%;
+}
 
 /*####################################
 7. Card 
@@ -240,4 +286,14 @@ img.medium {
 }
 .rating span:last-child {
   color: #404040;
+}
+
+/* ####################################
+9. Alert
+####################################### */
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
 }
