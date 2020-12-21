@@ -50,14 +50,6 @@ a:hover {
   color: #f80f07 !important;
   box-shadow: 0 4px 2px -2px #f11809;
 }
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-  padding: 0.5rem 5rem;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -296,4 +288,25 @@ img.large {
 }
 .error {
   color: #a02020;
+}
+/* ####################################
+10. About Us
+####################################### */
+.profile {
+  justify-content: space-between;
+}
+.profile h1 {
+  color: #f11809;
+  font-size: 5rem;
+}
+.profile h2 {
+  font-size: 3rem;
+}
+.profile p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.vision,
+.mission {
+  max-width: 50rem;
 }

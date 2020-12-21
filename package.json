@@ -1,0 +1,40 @@
+{
+  "name": "hseofgla",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "House of Glamour website, something for everyone. Specializes in crockery, bedroom linen and spa products",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/einbulinda/hseofgla.git"
+  },
+  "keywords": [
+    "crockery",
+    "linen",
+    "spa",
+    "products",
+    "massage",
+    "oils",
+    "kitchen",
+    "appliances",
+    "arshia",
+    "pillows",
+    "duvets",
+    "blenders"
+  ],
+  "author": "Einstein Bulinda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/einbulinda/hseofgla/issues"
+  },
+  "homepage": "https://github.com/einbulinda/hseofgla#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

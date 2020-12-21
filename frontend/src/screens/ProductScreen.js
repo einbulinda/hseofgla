@@ -40,7 +40,12 @@ export default function ProductScreen(props) {
               <li>
                 <div className="product-row">
                   <div>Price</div>
-                  <div className="price">Ksh. {product.price}</div>
+                  <div className="price">
+                    Ksh.{" "}
+                    {product.price
+                      .toString()
+                      .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
+                  </div>
                 </div>
               </li>
               <li>
