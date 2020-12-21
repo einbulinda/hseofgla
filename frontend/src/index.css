@@ -59,6 +59,9 @@ li {
   margin-top: 1rem;
   padding: 0.5rem;
 }
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -67,12 +70,19 @@ button {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+button {
   background-color: #f8f8f8;
   cursor: pointer;
   transition: 0.5s all ease-in;
 }
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
+}
+button:hover {
   color: #f8f8f8;
 }
 button.primary {
@@ -120,6 +130,17 @@ footer {
 }
 .col-2 {
   flex: 2 1 50rem;
+}
+.min-30 {
+  min-width: 30rem;
+}
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
 }
 /*###############################
 3. Main Logo 
@@ -237,6 +258,10 @@ footer h2 {
 ####################################*/
 img {
   border-radius: 0.5rem;
+}
+img.small {
+  max-width: 5rem;
+  width: 100%;
 }
 img.medium {
   max-width: 29rem;

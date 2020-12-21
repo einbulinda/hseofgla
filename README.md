@@ -59,8 +59,19 @@
    9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
    10. Add store to index.js
 10. Add Redux to Product Screen
-    1. create product details constants, actions and reducers
-    2. add reducer to store.js
-    3. use action in ProductScreen.js
-    4. add /api/product/:id to backend api
-11.
+    a. create product details constants, actions and reducers
+    b. add reducer to store.js
+    c. use action in ProductScreen.js
+    d. add /api/product/:id to backend api
+11. Handle add to cart button
+12. Implement Add To Cart Action
+13. Build Cart Screen
+    1. create 2 columns for cart items and cart action
+    2. cartItems.length === 0 ? cart is empty
+    3. show item image, name, qty and price
+    4. Proceed to Checkout button
+    5. Implement remove from cart action
+14. Implement remove from cart action
+    a. create removeFromCart constants, actions and reducers
+    b. add reducer to store.js
+    c. use action in CartSreen.js

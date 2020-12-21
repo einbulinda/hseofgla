@@ -9,7 +9,7 @@ const data = {
       price: 10000,
       rating: 4.5,
       numReviews: 10,
-      countInStock: 5,
+      countInStock: 7,
       description: "Cotton with 300tc",
     },
     {

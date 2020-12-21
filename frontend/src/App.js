@@ -1,19 +1,23 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import CartScreen from "./screens/CartScreen";
 import CompanyProfileScreen from "./screens/CompanyProfileScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 
 function App() {
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
   return (
     <BrowserRouter>
       <div className="grid-container">
         <header className="sticky-top">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-              <a className="navbar-brand" href="/">
+              <Link className="navbar-brand" to="/">
                 <img src="/logos/400dpiLogo.jpg" alt="House of Glamour" />
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -31,36 +35,43 @@ function App() {
               >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/">
+                    <Link
+                      className="nav-link active"
+                      aria-current="page"
+                      to="/"
+                    >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/about-us">
+                    <Link className="nav-link" to="/about-us">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="nav-link disabled"
-                      href="/offers"
+                      to="/offers"
                       tabindex="-1"
                       aria-disabled="true"
                     >
                       Offers!
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <ul className="navbar-nav mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a href="cart.html" className="nav-link">
+                    <Link to="cart.html" className="nav-link">
                       Cart
-                    </a>
+                      {cartItems.length > 0 && (
+                        <span className="badge">{cartItems.length}</span>
+                      )}
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="signin.html" className="nav-link">
+                    <Link to="signin.html" className="nav-link">
                       Sign In
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -69,6 +80,7 @@ function App() {
         </header>
         <main>
           <Route path="/" component={HomeScreen} exact></Route>
+          <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/about-us" component={CompanyProfileScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
         </main>
@@ -83,29 +95,29 @@ function App() {
                     <br />
                     Ground Floor - Shop GA 5 <br />
                     Mahi Mahiu Road <br />
-                    <a href="Tel:+254796437946">
+                    <Link to="Tel:+254796437946">
                       <i className="fas fa-phone-alt"> +254 796 437 946</i>
-                    </a>
+                    </Link>
                     <br />
-                    <a href="https://api.whatsapp.com/send?phone=254722522119">
+                    <Link to="https://api.whatsapp.com/send?phone=254722522119">
                       <i className="fab fa-whatsapp"> +254 722 522 119</i>
-                    </a>
+                    </Link>
                   </p>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                   <h2>Useful Links</h2>
                   <ul>
                     <li>
-                      <a href="#">Delivery Services</a>
+                      <Link to="#">Delivery Services</Link>
                     </li>
                     <li>
-                      <a href="#">Career</a>
+                      <Link to="#">Career</Link>
                     </li>
                     <li>
-                      <a href="#">Discounts</a>
+                      <Link to="#">Discounts</Link>
                     </li>
                     <li>
-                      <a href="#">Our Story</a>
+                      <Link to="#">Our Story</Link>
                     </li>
                   </ul>
                 </div>
@@ -115,18 +127,18 @@ function App() {
                     Please follow us on our social media profiles to keep
                     updated with latest product arrivals and offers.
                   </p>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="#">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="#">
                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="#">
                     <i className="fab fa-pinterest"></i>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
                   <h2>Our Newsletter</h2>
