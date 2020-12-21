@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="grid-container">
-        <header>
+        <header className="sticky-top">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
               <a className="navbar-brand" href="/">
