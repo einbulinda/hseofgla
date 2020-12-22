@@ -92,3 +92,11 @@
     2. create productSchema and productModel
     3. create productRoute
     4. Seed sample data
+17. Create Sign-in Backend
+    a. create /signin api
+    b. check email and password
+    c. generate token
+    d. install json web token
+    e. return token and data
+    f. test api using postman
+ 
