@@ -99,4 +99,8 @@
     d. install json web token
     e. return token and data
     f. test api using postman
- 
+18. Design SignIn Screen
+    a. create SigninScreen
+    b. render email and password fields
+    c. create signin constants, actions and reducers
+    e. Update Header based on user login

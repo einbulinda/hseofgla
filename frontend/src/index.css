@@ -14,6 +14,9 @@ Created by: Einstein Bulinda
 6. Product Images
 7. Card
 8. Rating 
+9. Alert
+10. About US
+11. Form
 */
 
 /*#############################
@@ -75,6 +78,7 @@ button {
   background-color: #f8f8f8;
   cursor: pointer;
   transition: 0.5s all ease-in;
+  color: #000;
 }
 input:hover,
 select:hover,
@@ -84,6 +88,10 @@ button:hover {
 }
 button:hover {
   color: #f8f8f8;
+}
+button:active {
+  border: 0.1rem #f8f8f8 solid;
+  transform: translateY(1rem);
 }
 button.primary {
   background-color: #f11809;
@@ -348,4 +356,25 @@ img.large {
 .vision,
 .mission {
   max-width: 50rem;
+}
+/* ####################################
+11. Form
+####################################### */
+.form h1 {
+  font-weight: bold;
+  color: #e22626;
+  font-size: 3rem;
+}
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.form label {
+  margin: 1rem 0;
+  display: block;
 }

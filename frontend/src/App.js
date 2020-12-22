@@ -5,6 +5,7 @@ import CartScreen from "./screens/CartScreen";
 import CompanyProfileScreen from "./screens/CompanyProfileScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
+import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -61,7 +62,7 @@ function App() {
                 </ul>
                 <ul className="navbar-nav mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <Link to="cart.html" className="nav-link">
+                    <Link to="/cart" className="nav-link">
                       Cart
                       {cartItems.length > 0 && (
                         <span className="badge">{cartItems.length}</span>
@@ -69,7 +70,7 @@ function App() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="signin.html" className="nav-link">
+                    <Link to="/signin" className="nav-link">
                       Sign In
                     </Link>
                   </li>
@@ -82,6 +83,7 @@ function App() {
           <Route path="/" component={HomeScreen} exact></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/about-us" component={CompanyProfileScreen}></Route>
+          <Route path="/signin" component={SigninScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
         </main>
         <footer>
