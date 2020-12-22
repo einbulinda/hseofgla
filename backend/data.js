@@ -17,11 +17,10 @@ const data = {
   ],
   products: [
     {
-      _id: "1",
       name: "Grey Flowered",
       category: "Duvet Covers",
       image: "/images/products/greyFlowery.jpg",
-      brand: "",
+      brand: "Cotton Duvets",
       price: 10000,
       rating: 4.5,
       numReviews: 10,
@@ -29,7 +28,6 @@ const data = {
       description: "Cotton with 300tc",
     },
     {
-      _id: "2",
       name: "7Pc Utensil Set",
       category: "Kitchenware",
       image: "/images/products/utensil_set.jpg",
@@ -41,7 +39,6 @@ const data = {
       description: "Arshia 7pc utensil set with stand.",
     },
     {
-      _id: "3",
       name: "Ceramic Cooking Pots",
       category: "Cookware",
       image: "/images/products/ceramic_hover.jpg",
@@ -53,7 +50,6 @@ const data = {
       description: "Ceramic cookware non stick and non scratch",
     },
     {
-      _id: "4",
       name: "Vaccum Cleaner",
       category: "Other Appliances",
       image: "/images/products/vaccum.jpg",
