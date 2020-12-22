@@ -17,6 +17,7 @@ Created by: Einstein Bulinda
 9. Alert
 10. About US
 11. Form
+
 */
 
 /*#############################
@@ -98,6 +99,25 @@ button.primary {
 }
 button.block {
   width: 100%;
+}
+.p-dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0.5rem;
+  min-width: 10rem;
+  padding: 1.3rem;
+  z-index: 1;
+  margin: 0.2rem;
+  background-color: #f8f8f8;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+}
+.p-dropdown:hover .dropdown-content {
+  display: block;
 }
 /*################################
 2. Layout 
