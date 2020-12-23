@@ -123,3 +123,4 @@
 22. Create Payment Screen
     1. create payment fields
     2. implement shipping constant, actions and reducers
+23. Design Place Order Screen
