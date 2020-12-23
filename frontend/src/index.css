@@ -17,7 +17,7 @@ Created by: Einstein Bulinda
 9. Alert
 10. About US
 11. Form
-
+12. Checkout Steps
 */
 
 /*#############################
@@ -400,4 +400,19 @@ img.large {
 .form label {
   margin: 1rem 0;
   display: block;
+}
+
+/* ####################################
+11. Checkout Steps
+####################################### */
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top-color: #097409;
+  color: #097409;
 }

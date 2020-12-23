@@ -116,3 +116,7 @@
     e. add fields
     f. style fields
     g. add screen to App.js
+21. Create shipping screen
+    a. create checkoutSteps.js component
+    b. create shipping fields
+    c. implement shipping constant, action and reducers
