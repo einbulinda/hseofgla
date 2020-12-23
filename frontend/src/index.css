@@ -336,6 +336,9 @@ img.large {
 /* ####################################
 9. Alert
 ####################################### */
+.loading {
+  display: block !important;
+}
 .success {
   color: #20a020;
 }
