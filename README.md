@@ -124,3 +124,8 @@
     1. create payment fields
     2. implement shipping constant, actions and reducers
 23. Design Place Order Screen
+24. Create Place Order API
+    a. createOrder api
+    b. create orderModel
+    c. create orderRouter
+    d. create post order route
