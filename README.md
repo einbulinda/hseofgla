@@ -130,3 +130,10 @@
     c. create orderRouter
     d. create post order route
 25. Implement PlaceOrder Action
+26. Create Order Screen
+    1. build order api for /api/orders/:id
+    2. create OrderScreen.js
+    3. dispatch order details action in useEffect
+    4. load data with useSelector
+    5. show data like place order screen
+    6. create order details constant, action and reducer
