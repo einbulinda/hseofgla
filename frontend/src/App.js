@@ -111,6 +111,29 @@ function App() {
                       </Link>
                     )}
                   </li>
+                  <li className="nav-item">
+                    {userInfo && userInfo.isAdmin && (
+                      <div className="p-dropdown">
+                        <Link to="#admin" className="nav-link">
+                          Admin<i class="fas fa-caret-down"></i>
+                        </Link>
+                        <ul className="dropdown-content">
+                          <li>
+                            <Link to="/dashboard">Dashboard</Link>
+                          </li>
+                          <li>
+                            <Link to="/productlist">Products</Link>
+                          </li>
+                          <li>
+                            <Link to="/orderlist">Orders</Link>
+                          </li>
+                          <li>
+                            <Link to="/userlist">Users</Link>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                  </li>
                 </ul>
               </div>
             </div>

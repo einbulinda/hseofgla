@@ -160,3 +160,7 @@
     b. show user info
     c. added jsconfig.json to improve the coding experience - the configuration improves auto import functionality in react project
 32. Update user Profile
+33. Create Admin View
+    1. Create Admin Menu
+    2. Create Admin Middleware in Backend
+    3. Create Admin Route in Frontend
