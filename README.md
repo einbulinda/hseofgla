@@ -74,7 +74,7 @@
 14. Implement remove from cart action
     a. create removeFromCart constants, actions and reducers
     b. add reducer to store.js
-    c. use action in CartSreen.js
+    c. use action in CartScreen.js
 15. Create Sample Users In MongoDB
     1. npm install mongoose
     2. connect to mongodb
@@ -149,4 +149,9 @@
     1. update order after payment
     2. create payOrder in api.js
     3. create route for /:id/pay in orderRouter.js
-    4. rerender after pay order
+    4. Re-render after pay order
+30. Display order history
+    a. create customer api
+    b. create api for getMyOrders
+    c. show orders in profile screen
+    e. style orders

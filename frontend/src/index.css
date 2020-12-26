@@ -104,16 +104,19 @@ button.block {
   display: inline-block;
   position: relative;
 }
+button.small {
+  font-size: 1.2rem;
+}
 .dropdown-content {
   position: absolute;
   display: none;
   right: 0.5rem;
-  min-width: 10rem;
-  padding: 1.3rem;
+  min-width: 15rem;
+  padding: 0 0.5rem;
   z-index: 1;
   margin: 0.2rem;
-  background-color: #f8f8f8;
-  margin-top: 0.3rem;
+  background-color: #e7b4b4;
+  margin-top: 0.5rem;
   border-radius: 0.5rem;
 }
 .p-dropdown:hover .dropdown-content {
@@ -418,4 +421,15 @@ img.large {
 .checkout-steps > div.active {
   border-top-color: #097409;
   color: #097409;
+}
+
+/* ####################################
+12. Table
+####################################### */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table button {
+  margin: 0 0.2rem;
 }
