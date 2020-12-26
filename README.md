@@ -204,7 +204,7 @@
     2. add order deliver action to order details screen
 43. Publish To Heroku
     1. heroku login
-    2. heroku apps:create <yourname>amazona
+    2. heroku apps:create <yourName>hseofgla
     3. Edit package.json for build script
     4. Create Procfile
     5. Create mongodb atlas database

@@ -5,6 +5,7 @@
   "description": "House of Glamour website, something for everyone. Specializes in crockery, bedroom linen and spa products",
   "main": "index.js",
   "scripts": {
+    "build":" cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
@@ -44,5 +45,6 @@
   "devDependencies": {
     "eslint": "^7.16.0",
     "nodemon": "^2.0.6"
-  }
+  },
+  "engines":{"node": "12.4.0", "npm":"6.9.0"}
 }
