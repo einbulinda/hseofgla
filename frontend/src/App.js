@@ -11,6 +11,7 @@ import OrderHistoryScreen from "./screens/OrderHistoryScreen";
 import OrderScreen from "./screens/OrderScreen";
 import PaymentMethodsScreen from "./screens/PaymentMethodsScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import ProductEditScreen from "./screens/ProductEditScreen";
 import ProductListScreen from "./screens/ProductListScreen";
 import ProductScreen from "./screens/ProductScreen";
 import ProfileScreen from "./screens/ProfileScreen";
@@ -161,6 +162,11 @@ function App() {
             component={ProductListScreen}
           ></AdminRoute>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
+          <Route
+            path="/product/:id/edit"
+            component={ProductEditScreen}
+            exact
+          ></Route>
         </main>
         <footer>
           <div className="footer-top">
