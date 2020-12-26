@@ -155,3 +155,8 @@
     b. create api for getMyOrders
     c. show orders in profile screen
     e. style orders
+31. Display User Profile
+    a. user details api in backend to return user info
+    b. show user info
+    c. added jsconfig.json to improve the coding experience - the configuration improves auto import functionality in react project
+32. Update user Profile

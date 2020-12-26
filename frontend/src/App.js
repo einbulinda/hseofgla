@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import { signout } from "./actions/userActions";
+import PrivateRoute from "./components/PrivateRoute";
 import CartScreen from "./screens/CartScreen";
 import CompanyProfileScreen from "./screens/CompanyProfileScreen";
 import HomeScreen from "./screens/HomeScreen";
@@ -10,6 +11,7 @@ import OrderScreen from "./screens/OrderScreen";
 import PaymentMethodsScreen from "./screens/PaymentMethodsScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import ProductScreen from "./screens/ProductScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 import SigninScreen from "./screens/SigninScreen";
@@ -91,6 +93,9 @@ function App() {
                         </Link>
                         <ul className="dropdown-content">
                           <li>
+                            <Link to="/profile">User Profile</Link>
+                          </li>
+                          <li>
                             <Link to="/orderhistory">Order History</Link>
                           </li>
                           <li>
@@ -122,6 +127,10 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen}></Route>
           <Route path="/order/:id" component={OrderScreen}></Route>
           <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
+          <PrivateRoute
+            path="/profile"
+            component={ProfileScreen}
+          ></PrivateRoute>
           <Route path="/product/:id" component={ProductScreen}></Route>
         </main>
         <footer>
