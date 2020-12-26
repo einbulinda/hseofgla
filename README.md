@@ -178,3 +178,7 @@
     b. create fields for the product
     c. load product details
     d. add routes
+37. Update Product
+    a. update api
+    b. define constants, reducers and action
+    c. use action in product edit screen
