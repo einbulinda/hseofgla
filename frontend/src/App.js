@@ -160,7 +160,7 @@ function App() {
             path="/productlist"
             component={ProductListScreen}
           ></AdminRoute>
-          <Route path="/product/:id" component={ProductScreen}></Route>
+          <Route path="/product/:id" component={ProductScreen} exact></Route>
         </main>
         <footer>
           <div className="footer-top">
