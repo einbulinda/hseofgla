@@ -191,3 +191,8 @@
     1. create delete api in backend
     2. create delete constants, action and reducer
     3. use it in product list screen
+40. List Orders - Admin
+    1. create order list api
+    2. create Order List Screen
+    3. Add reducer to store
+    4. show products on the screen
