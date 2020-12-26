@@ -1,20 +1,25 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { listOrderMine } from "../actions/orderActions";
+import { listProducts } from "../actions/productActions";
 import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
-export default function OrderHistoryScreen(props) {
-  const orderMineList = useSelector((state) => state.orderMineList);
-  const { loading, error, orders } = orderMineList;
+export default function ProductListScreen(props) {
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products } = productList;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(listOrderMine());
+    dispatch(listProducts());
   }, [dispatch]);
+
+  const deleteHandler = () => {
+    // TODO: dispatch delete action later
+  };
+
   return (
     <div>
-      <h1>Order History</h1>
+      <h1>Products</h1>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
@@ -24,39 +29,44 @@ export default function OrderHistoryScreen(props) {
           <thead>
             <tr>
               <th>ID</th>
-              <th>DATE</th>
-              <th>TOTAL</th>
-              <th>PAID</th>
-              <th>DELIVERED</th>
+              <th>NAME</th>
+              <th>PRICE</th>
+              <th>CATEGORY</th>
+              <th>BRAND</th>
               <th>ACTIONS</th>
             </tr>
           </thead>
           <tbody>
-            {orders.map((order) => (
-              <tr key={order._id}>
-                <td>{order._id}</td>
-                <td>{order.createdAt.substring(0, 10)}</td>
+            {products.map((product) => (
+              <tr key={product._id}>
+                <td>{product._id}</td>
+                <td>{product.name}</td>
+
                 <td>
-                  {order.totalPrice
+                  {product.price
                     .toFixed(0)
                     .toString()
                     .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
                 </td>
-                <td>{order.isPaid ? order.paidAt.substring(0, 10) : "No"}</td>
-                <td>
-                  {order.isDelivered
-                    ? order.deliveredAt.substring(0, 10)
-                    : "No"}
-                </td>
+                <td>{product.category}</td>
+                <td>{product.brand}</td>
+
                 <td>
                   <button
                     type="button"
                     className="small"
                     onClick={() => {
-                      props.history.push(`/order/${order._id}`);
+                      props.history.push(`/product/${product._id}/edit`);
                     }}
                   >
-                    Details
+                    Edit
+                  </button>
+                  <button
+                    type="button"
+                    className="small"
+                    onClick={() => deleteHandler(product)}
+                  >
+                    Delete
                   </button>
                 </td>
               </tr>
