@@ -196,3 +196,6 @@
     2. create Order List Screen
     3. Add reducer to store
     4. show products on the screen
+41. Delete Order by Admin
+    a. create delete order action and reducer
+    b. add order delete action to order list
