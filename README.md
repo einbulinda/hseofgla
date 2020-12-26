@@ -199,3 +199,14 @@
 41. Delete Order by Admin
     a. create delete order action and reducer
     b. add order delete action to order list
+42. Deliver Order
+    1. create constant, actions and reducers for deliver order
+    2. add order deliver action to order details screen
+43. Publish To Heroku
+    1. heroku login
+    2. heroku apps:create <yourname>amazona
+    3. Edit package.json for build script
+    4. Create Procfile
+    5. Create mongodb atlas database
+    6. Set database connection in heroku env variables
+    7. Commit and push
