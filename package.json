@@ -5,9 +5,7 @@
   "description": "House of Glamour website, something for everyone. Specializes in crockery, bedroom linen and spa products",
   "main": "index.js",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
-    "build": " cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
@@ -33,13 +31,13 @@
   "bugs": {
     "url": "https://github.com/einbulinda/hseofgla/issues"
   },
-  "homepage": "http://einbulinda.github.io/hseofgla",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
     "mongoose": "^5.11.8",
     "multer": "^1.4.2",
     "request": "^2.88.2"
@@ -52,6 +50,5 @@
   "engines": {
     "node": "14.x",
     "npm": "6.x"
-  },
-  "terser": "3.14.1"
+  }
 }
