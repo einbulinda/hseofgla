@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Environment (NEVER commit these)
+.env
+.env.local
+.env.*.local
+
+# File uploads (runtime data, not source code)
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE (optional — some teams commit VS Code settings, some don't)
+# .vscode/
+# .idea/
