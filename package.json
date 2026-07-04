@@ -1,0 +1,33 @@
+{
+    "name": "hseofgla",
+    "private": true,
+    "description": "House of Glamour - Integrated eCommerce, POS & ERP Platform",
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "dev:api": "turbo run dev --filter=@hog/api",
+        "dev:web": "turbo run dev --filter=@hog/web",
+        "dev:pos": "turbo run dev --filter=@hog/pos",
+        "dev:erp": "turbo run dev --filter=@hog/erp",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+        "db:generate": "pnpm --filter @hog/api prisma generate",
+        "db:migrate": "pnpm --filter @hog/api prisma migrate dev",
+        "db:migrate:prod": "pnpm --filter @hog/api prisma migrate deploy",
+        "db:seed": "pnpm --filter @hog/api prisma db seed",
+        "db:studio": "pnpm --filter @hog/api prisma studio",
+        "db:reset": "pnpm --filter @hog/api prisma migrate reset",
+        "clean": "turbo run clean"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.0",
+        "turbo": "^2.0.0",
+        "typescript": "^5.5.0"
+    },
+    "packageManager": "pnpm@9.4.0",
+    "engines": {
+        "node": ">=20.0.0",
+        "pnpm": ">=9.0.0"
+    }
+}

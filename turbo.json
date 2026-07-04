@@ -1,0 +1,45 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": [
+        ".env"
+    ],
+    "globalEnv": [
+        "NODE_ENV",
+        "DATABASE_URL",
+        "REDIS_URL"
+    ],
+    "tasks": {
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "outputs": [
+                "dist/**",
+                ".next/**"
+            ],
+            "cache": true
+        },
+        "dev": {
+            "dependsOn": [
+                "^build"
+            ],
+            "persistent": true,
+            "cache": false
+        },
+        "lint": {
+            "dependsOn": [
+                "^build"
+            ],
+            "cache": true
+        },
+        "test": {
+            "dependsOn": [
+                "^build"
+            ],
+            "cache": true
+        },
+        "clean": {
+            "cache": false
+        }
+    }
+}
